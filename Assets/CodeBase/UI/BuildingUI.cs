@@ -6,15 +6,15 @@ namespace CodeBase.UI
 {
     public class BuildingUI : MonoBehaviour
     {
-        public TextMeshPro text;
+        public TextMeshPro Text;
 
         public void SetText(ReasonForStopping reasonForStopping) =>
-            text.text = reasonForStopping.ToString();
+            Text.text = reasonForStopping.ToString();
 
         public void HideText() =>
-            text.gameObject.SetActive(false);
+            Text.gameObject.SetActive(false);
 
         public void ShowText() =>
-            text.gameObject.SetActive(true);
+            Text.gameObject.SetActive(true);
     }
 }
